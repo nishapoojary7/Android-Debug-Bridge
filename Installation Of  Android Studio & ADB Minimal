@@ -1,0 +1,70 @@
+# 🚀 **Installation Guide: Android Studio & ADB Minimal**
+
+## 🛠 **Android Studio Installation**
+Follow these steps to install Android Studio on your system:  
+
+1. **📥 Download Android Studio**  
+   - Visit the official [Android Developer website](https://developer.android.com/studio).  
+   - Download the latest stable version of Android Studio for your operating system.  
+
+2. **📂 Run the Installer**  
+   - Open the downloaded installer and follow the on-screen instructions.  
+   - Accept the license agreements and choose the installation directory.  
+
+3. **📦 Install Required SDK Components**  
+   - Once the installation is complete, launch Android Studio.  
+   - Follow the setup wizard to install essential SDK tools and system images.  
+
+4. **⚙️ Configure System Environment Variables (If Required)**  
+   - On Windows, add the Android SDK path to the system’s `PATH` environment variable for command-line access.  
+
+5. **✅ Verify Installation**  
+   - Open Android Studio and check for any additional updates.  
+   - Create a sample project to ensure everything is working correctly.  
+
+---
+
+
+## 🔧 **Minimal ADB & Fastboot Installation**
+Minimal ADB & Fastboot is a lightweight tool for Android debugging and device management.  
+
+### 📌 **Installation Steps**  
+1. **📥 Download Minimal ADB & Fastboot**  
+   - Obtain the latest version from an official and trusted source.  
+
+2. **📂 Run the Installer**  
+   - Open the setup file and follow the installation wizard.  
+   - Choose the installation directory and complete the setup.  
+
+3. **💻 Open ADB Command Prompt**  
+   - Navigate to the installation directory.  
+   - Open the command prompt (`cmd`) and type:  
+     ```sh
+     adb version
+     ```
+   - This should display the installed ADB version.  
+
+4. **📱 Enable USB Debugging on Your Android Device**  
+   - On your Android phone, go to:  
+     **⚙️ Settings** > **📲 About Phone** > Tap **Build Number** 7 times to enable Developer Mode.  
+   - Navigate to **Developer Options** and enable **USB Debugging**.  
+
+5. **🔌 Connect Your Device & Verify the Connection**  
+   - Use a USB cable to connect your device to the computer.  
+   - Run the following command to check if your device is detected:  
+     ```sh
+     adb devices
+     ```
+   - If connected successfully, your device should appear in the list.  
+
+6. **🛠 Test ADB & Fastboot Commands (Optional)**  
+   - Try commands like:  
+     ```sh
+     adb shell
+     adb reboot bootloader
+     fastboot devices
+     ```
+   - This confirms that ADB & Fastboot are functioning correctly.  
+
+
+
