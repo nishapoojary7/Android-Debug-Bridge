@@ -1,0 +1,51 @@
+SQLite Installation on Windows 🖥️
+SQLite is a lightweight, serverless database engine that is easy to set up on Windows. Follow the steps below to install and configure it properly. 🚀
+
+🔸 Step 1: Download SQLite ⬇️
+1️⃣ Visit the SQLite Download Page 🌐.
+2️⃣ Download Precompiled Binaries for Windows 🏗️:
+
+📂 sqlite-tools-win32-x86.zip (Command-line shell)
+📂 sqlite-dll-win32-x86.zip (DLL files)
+
+🔸 Step 2: Extract the Files 📂
+1️⃣ Locate the downloaded ZIP files in your Downloads folder. 📥
+2️⃣ Extract both ZIP files to a dedicated folder, e.g., C:\sqlite 🗂️.
+3️⃣ Your C:\sqlite folder should now contain:
+
+sqlite3.exe (SQLite Command Line Tool)
+sqlite3.dll (SQLite DLL file)
+
+🔸 Step 3: Set Up Environment Variables (Optional but Recommended) ⚙️
+This step allows you to access SQLite from anywhere in the Command Prompt.
+
+1️⃣ Open Control Panel 🛠️.
+2️⃣ Navigate to System > Advanced system settings 🖥️.
+3️⃣ Click Environment Variables 📜.
+4️⃣ Under System Variables, find Path, click Edit ✏️.
+5️⃣ Click New ➕ and add the SQLite installation path (C:\sqlite).
+6️⃣ Click OK ✅ to save changes.
+
+🔸 Step 4: Verify Installation ✅
+1️⃣ Open Command Prompt (cmd) 💻.
+2️⃣ Type the following command and press Enter:
+sqlite3
+3️⃣ If SQLite is installed correctly, you should see a welcome message like this:
+SQLite version 3.x.x 20XX-XX-XX
+Enter ".help" for usage hints.
+sqlite>
+4️⃣ Type .exit and press Enter to close SQLite.
+
+🔸Step 5: Create and Use a Database 🗃️
+1️⃣ Open Command Prompt (cmd) and navigate to your SQLite folder:
+cd C:\sqlite
+2️⃣ Create a new database by running:
+sqlite3 my_database.db
+3️⃣ To create a table, type:
+CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER);
+4️⃣ Insert data into the table:
+INSERT INTO users (name, age) VALUES ('Alice', 25);
+5️⃣ Retrieve the data:
+SELECT * FROM users;
+
+
